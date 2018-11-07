@@ -1,0 +1,18 @@
+import armas.*
+describe "Testeando" {
+	
+	var ak47 = new Ametralladora()
+	var cuchi = new Cuchillo()
+	var bomba = new Bomba()
+	
+	
+
+test "saber si un arma es Heavy" {
+
+	ak47.potenciaDestructiva(300)
+	assert.that(ak47.esHeavy())
+	assert.notThat(cuchi.esHeavy())
+	assert.that(bomba.esHeavy())
+}
+}
+
